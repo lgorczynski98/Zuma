@@ -53,7 +53,7 @@ public class BallShootTimer extends AnimationTimer implements Observator {
     private void checkIfCollisionAppears(){
         int halfOfCirlceInnerBoxSide = (int)(Ball.getBallRadius() / sqrt2);
         int circleInnerBoxSide = 2 * halfOfCirlceInnerBoxSide;
-        for(Ball ballInLine : Controller.getBallsInLine()){
+        for(Ball ballInLine : BallsLineTimer.getInstance().getBalls().getBallsList()){
             if(ball.getBoundsInParent().intersects(ballInLine.getCenterX() - halfOfCirlceInnerBoxSide, ballInLine.getCenterY() - halfOfCirlceInnerBoxSide, circleInnerBoxSide, circleInnerBoxSide)){
                 handleCollision(ballInLine);
                 return;
@@ -62,8 +62,8 @@ public class BallShootTimer extends AnimationTimer implements Observator {
     }
 
     private void handleCollision(Ball ballInLine){
-        int index = Controller.getBallsLineTimer().getBallIndex(ballInLine);
-        Controller.getBallsLineTimer().addNewBall(index, ball);
+        int index = BallsLineTimer.getInstance().getBallIndex(ballInLine);
+        BallsLineTimer.getInstance().addNewBall(index, ball);
         observable.removeObservator(this);
         this.stop();
     }

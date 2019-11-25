@@ -30,7 +30,6 @@ public class Controller implements Initializable {
     @FXML private Circle nextBallCircle;
     private List<Point2D> pathPoints = new ArrayList<>();
     private Point2D startingPoint;
-    private volatile static BallsLineTimer ballsLineTimer;
     private volatile double turnedAngle;
     private static RandomImageGenerator randomImageGenerator;
     private Pauze pauze;
@@ -121,8 +120,8 @@ public class Controller implements Initializable {
 
     private void setBallsLineTimerPath(){
         Ball.setPathPoints(pathPoints);
-        ballsLineTimer = new BallsLineTimer(pauze);
-        ballsLineTimer.start(pane, startingPoint);
+        pauze.addObservator(BallsLineTimer.getInstance());
+        BallsLineTimer.getInstance().start(pane, startingPoint);
     }
 
     private void setMousePressedShooting(){
@@ -141,14 +140,6 @@ public class Controller implements Initializable {
     private void preparePauze(){
         pauze.changeState();
         pauze.notifyObservators();
-    }
-
-    public static List<Ball> getBallsInLine() {
-        return ballsLineTimer.getBalls().getBallsList();
-    }
-
-    public static BallsLineTimer getBallsLineTimer(){
-        return ballsLineTimer;
     }
 
     public static RandomImageGenerator getRandomImageGenerator() {

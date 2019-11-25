@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zuma/sample/BallLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zuma/sample/BallLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BallLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BallLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BallShootTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BallShootTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/BallsLineTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BallsLineTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,32 +73,85 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="216">
+              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initialize#0;class#Controller#0" />
                 <element signature="method#prepareFrog#0;class#Controller#0" />
-                <element signature="e#1321#1551#0" />
-                <element signature="e#1579#1623#0" />
                 <element signature="method#setCannonRotationPropery#0;class#Controller#0" />
                 <element signature="method#setPathShapeAndPropertioes#0;class#Controller#0" />
                 <element signature="method#setMousePressedToDrawPath#0;class#Controller#0" />
-                <element signature="e#2331#2561#0" />
                 <element signature="method#setMouseDraggedToDrawPath#0;class#Controller#0" />
-                <element signature="e#2648#2838#0" />
                 <element signature="method#setMouseReleasedAfterDrawingPath#0;class#Controller#0" />
-                <element signature="e#2933#3389#0" />
-                <element signature="e#3079#3219#0" />
-                <element signature="e#3251#3303#0" />
                 <element signature="method#setPathEndImage#0;class#Controller#0" />
                 <element signature="method#clearMouseListeners#0;class#Controller#0" />
                 <element signature="method#setBallsLineTimerPath#0;class#Controller#0" />
                 <element signature="method#setMousePressedShooting#0;class#Controller#0" />
                 <element signature="method#preparePauze#0;class#Controller#0" />
-                <element signature="e#5138#5202#1" />
-                <element signature="n#!!block;n#getBallsLineTimer#0;n#Controller#0" />
-                <element signature="e#5361#5405#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/BallsLineTimer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+              <folding>
+                <element signature="method#start#0;class#BallsLineTimer#0" />
+                <element signature="method#handle#0;class#BallsLineTimer#0" />
+                <element signature="method#moveBallsInLine#0;class#BallsLineTimer#0" />
+                <element signature="method#moveBallsInLineWhenAFewBallsInLine#0;class#BallsLineTimer#0" />
+                <element signature="method#moveBallsWhileEntering#0;class#BallsLineTimer#0" />
+                <element signature="method#findEnteringBallWithLowestIndex#0;class#BallsLineTimer#0" />
+                <element signature="method#collisionAppearsWithCovering#0;class#BallsLineTimer#0" />
+                <element signature="method#checkCollisions#0;class#BallsLineTimer#0" />
+                <element signature="method#checkIfAlmostCollision#0;class#BallsLineTimer#0" />
+                <element signature="method#addNewBall#0;class#BallsLineTimer#0" />
+                <element signature="method#searchForThreeOrMoreSameBalls#0;class#BallsLineTimer#0" />
+                <element signature="method#addSameColorBallsWithHigherIndex#0;class#BallsLineTimer#0" />
+                <element signature="method#addSameColorBallsWithLowerIndex#0;class#BallsLineTimer#0" />
+                <element signature="method#handleNotification#0;class#BallsLineTimer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/BallLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="method#BallLine#0;class#BallLine#0" />
+                <element signature="method#createNewBall#0;class#BallLine#0" />
+                <element signature="n#!!block;n#size#0;n#BallLine#0" />
+                <element signature="n#!!block;n#get#0;n#BallLine#0" />
+                <element signature="n#!!block;n#indexOf#0;n#BallLine#0" />
+                <element signature="n#!!block;n#add#0;n#BallLine#0" />
+                <element signature="n#!!block;n#getBallsList#0;n#BallLine#0" />
+                <element signature="method#removeAll#0;class#BallLine#0" />
+                <element signature="e#1238#1325#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/BallShootTimer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="method#BallShootTimer#0;class#BallShootTimer#0" />
+                <element signature="method#createNewBall#0;class#BallShootTimer#0" />
+                <element signature="method#handle#0;class#BallShootTimer#0" />
+                <element signature="method#checkIfCollisionAppears#0;class#BallShootTimer#0" />
+                <element signature="method#handleCollision#0;class#BallShootTimer#0" />
+                <element signature="method#checkIfOutsideTheMap#0;class#BallShootTimer#0" />
+                <element signature="method#handleNotification#0;class#BallShootTimer#0" />
               </folding>
             </state>
           </provider>
@@ -113,6 +174,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -126,15 +190,15 @@
         <option value="$PROJECT_DIR$/src/styles/style.css" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/RandomImageGenerator.java" />
-        <option value="$PROJECT_DIR$/src/sample/BallLine.java" />
         <option value="$PROJECT_DIR$/src/sample/images/Observable.java" />
         <option value="$PROJECT_DIR$/src/sample/Observable.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Pauze.java" />
+        <option value="$PROJECT_DIR$/src/sample/Observator.java" />
+        <option value="$PROJECT_DIR$/src/sample/BallLine.java" />
+        <option value="$PROJECT_DIR$/src/sample/BallShootTimer.java" />
         <option value="$PROJECT_DIR$/src/sample/BallsLineTimer.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/BallShootTimer.java" />
-        <option value="$PROJECT_DIR$/src/sample/Observator.java" />
       </list>
     </option>
   </component>
@@ -144,6 +208,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -152,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,6 +251,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +264,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574681227562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574683394182" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/sample/images" />
     <property name="project.structure.last.edited" value="Project" />
@@ -337,16 +402,18 @@
       <workItem from="1574590348973" duration="1103000" />
       <workItem from="1574611374070" duration="2265000" />
       <workItem from="1574676416978" duration="4353000" />
+      <workItem from="1574681367478" duration="2031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74407000" />
+    <option name="totallyTimeSpent" value="76438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.14285715" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1444563" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,7 +422,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.63488626" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29035753" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33586133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -579,30 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BallsLineTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="method#start#0;class#BallsLineTimer#0" />
-            <element signature="method#handle#0;class#BallsLineTimer#0" />
-            <element signature="method#moveBallsInLine#0;class#BallsLineTimer#0" />
-            <element signature="method#moveBallsInLineWhenAFewBallsInLine#0;class#BallsLineTimer#0" />
-            <element signature="method#moveBallsWhileEntering#0;class#BallsLineTimer#0" />
-            <element signature="method#findEnteringBallWithLowestIndex#0;class#BallsLineTimer#0" />
-            <element signature="method#collisionAppearsWithCovering#0;class#BallsLineTimer#0" />
-            <element signature="method#checkCollisions#0;class#BallsLineTimer#0" />
-            <element signature="method#checkIfAlmostCollision#0;class#BallsLineTimer#0" />
-            <element signature="method#addNewBall#0;class#BallsLineTimer#0" />
-            <element signature="method#searchForThreeOrMoreSameBalls#0;class#BallsLineTimer#0" />
-            <element signature="method#addSameColorBallsWithHigherIndex#0;class#BallsLineTimer#0" />
-            <element signature="method#addSameColorBallsWithLowerIndex#0;class#BallsLineTimer#0" />
-            <element signature="n#!!block;n#getBallIndex#0;n#BallsLineTimer#0" />
-            <element signature="method#handleNotification#0;class#BallsLineTimer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -622,42 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BallShootTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="method#BallShootTimer#0;class#BallShootTimer#0" />
-            <element signature="method#createNewBall#0;class#BallShootTimer#0" />
-            <element signature="method#handle#0;class#BallShootTimer#0" />
-            <element signature="method#checkIfCollisionAppears#0;class#BallShootTimer#0" />
-            <element signature="e#1959#2250#1" />
-            <element signature="e#2156#2240#1" />
-            <element signature="method#handleCollision#0;class#BallShootTimer#0" />
-            <element signature="method#checkIfOutsideTheMap#0;class#BallShootTimer#0" />
-            <element signature="method#handleNotification#0;class#BallShootTimer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/BallLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="method#BallLine#0;class#BallLine#0" />
-            <element signature="method#createNewBall#0;class#BallLine#0" />
-            <element signature="n#!!block;n#size#0;n#BallLine#0" />
-            <element signature="n#!!block;n#get#0;n#BallLine#0" />
-            <element signature="n#!!block;n#indexOf#0;n#BallLine#0" />
-            <element signature="n#!!block;n#add#0;n#BallLine#0" />
-            <element signature="n#!!block;n#getBallsList#0;n#BallLine#0" />
-            <element signature="method#removeAll#0;class#BallLine#0" />
-            <element signature="e#1238#1325#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -672,34 +679,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/BallsLineTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+          <folding>
+            <element signature="method#start#0;class#BallsLineTimer#0" />
+            <element signature="method#handle#0;class#BallsLineTimer#0" />
+            <element signature="method#moveBallsInLine#0;class#BallsLineTimer#0" />
+            <element signature="method#moveBallsInLineWhenAFewBallsInLine#0;class#BallsLineTimer#0" />
+            <element signature="method#moveBallsWhileEntering#0;class#BallsLineTimer#0" />
+            <element signature="method#findEnteringBallWithLowestIndex#0;class#BallsLineTimer#0" />
+            <element signature="method#collisionAppearsWithCovering#0;class#BallsLineTimer#0" />
+            <element signature="method#checkCollisions#0;class#BallsLineTimer#0" />
+            <element signature="method#checkIfAlmostCollision#0;class#BallsLineTimer#0" />
+            <element signature="method#addNewBall#0;class#BallsLineTimer#0" />
+            <element signature="method#searchForThreeOrMoreSameBalls#0;class#BallsLineTimer#0" />
+            <element signature="method#addSameColorBallsWithHigherIndex#0;class#BallsLineTimer#0" />
+            <element signature="method#addSameColorBallsWithLowerIndex#0;class#BallsLineTimer#0" />
+            <element signature="method#handleNotification#0;class#BallsLineTimer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/BallLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="method#BallLine#0;class#BallLine#0" />
+            <element signature="method#createNewBall#0;class#BallLine#0" />
+            <element signature="n#!!block;n#size#0;n#BallLine#0" />
+            <element signature="n#!!block;n#get#0;n#BallLine#0" />
+            <element signature="n#!!block;n#indexOf#0;n#BallLine#0" />
+            <element signature="n#!!block;n#add#0;n#BallLine#0" />
+            <element signature="n#!!block;n#getBallsList#0;n#BallLine#0" />
+            <element signature="method#removeAll#0;class#BallLine#0" />
+            <element signature="e#1238#1325#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/BallShootTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="method#BallShootTimer#0;class#BallShootTimer#0" />
+            <element signature="method#createNewBall#0;class#BallShootTimer#0" />
+            <element signature="method#handle#0;class#BallShootTimer#0" />
+            <element signature="method#checkIfCollisionAppears#0;class#BallShootTimer#0" />
+            <element signature="method#handleCollision#0;class#BallShootTimer#0" />
+            <element signature="method#checkIfOutsideTheMap#0;class#BallShootTimer#0" />
+            <element signature="method#handleNotification#0;class#BallShootTimer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="216">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#Controller#0" />
             <element signature="method#prepareFrog#0;class#Controller#0" />
-            <element signature="e#1321#1551#0" />
-            <element signature="e#1579#1623#0" />
             <element signature="method#setCannonRotationPropery#0;class#Controller#0" />
             <element signature="method#setPathShapeAndPropertioes#0;class#Controller#0" />
             <element signature="method#setMousePressedToDrawPath#0;class#Controller#0" />
-            <element signature="e#2331#2561#0" />
             <element signature="method#setMouseDraggedToDrawPath#0;class#Controller#0" />
-            <element signature="e#2648#2838#0" />
             <element signature="method#setMouseReleasedAfterDrawingPath#0;class#Controller#0" />
-            <element signature="e#2933#3389#0" />
-            <element signature="e#3079#3219#0" />
-            <element signature="e#3251#3303#0" />
             <element signature="method#setPathEndImage#0;class#Controller#0" />
             <element signature="method#clearMouseListeners#0;class#Controller#0" />
             <element signature="method#setBallsLineTimerPath#0;class#Controller#0" />
             <element signature="method#setMousePressedShooting#0;class#Controller#0" />
             <element signature="method#preparePauze#0;class#Controller#0" />
-            <element signature="e#5138#5202#1" />
-            <element signature="n#!!block;n#getBallsLineTimer#0;n#Controller#0" />
-            <element signature="e#5361#5405#1" />
           </folding>
         </state>
       </provider>

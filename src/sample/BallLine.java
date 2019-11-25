@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Set;
 
 public class BallLine {
-
     private Pane pane;
     private volatile List<Ball> balls = new ArrayList<>();
     private Point2D startingPoint;

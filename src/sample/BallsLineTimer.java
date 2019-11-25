@@ -12,15 +12,25 @@ import java.util.Set;
 
 public class BallsLineTimer extends AnimationTimer implements Observator{
 
+    private static BallsLineTimer instance;
+
+    private BallsLineTimer(){}
+
+    public static BallsLineTimer getInstance(){
+        if (instance == null){
+            synchronized (BallsLineTimer.class){
+                instance = new BallsLineTimer();
+            }
+        }
+        return instance;
+    }
+
+    //======INSTANCE FIELDS AND METHODS================================
+
     private int counter = 0;
     private final int COUNTER_MODULATOR = 120;
     private BallLine ballLine;
     private List<Ball> enteringBalls = new ArrayList<>();
-    private Observable observable;
-
-    public BallsLineTimer(Observable observable){
-        observable.addObservator(this);
-    }
 
     public void start(Pane pane, Point2D startingPoint){
         ballLine = new BallLine(pane, startingPoint);
@@ -40,7 +50,7 @@ public class BallsLineTimer extends AnimationTimer implements Observator{
         }
         catch(Exception e) {
             this.stop();
-            observable.removeObservator(this);
+//            observable.removeObservator(this);
         }
     }
 
