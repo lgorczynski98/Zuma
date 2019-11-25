@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Path?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Group fx:id="cannon" layoutX="500.0" layoutY="500.0">
+         <children>
+            <Circle fx:id="outerCircle" fill="DODGERBLUE" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="nextBallCircle" centerY="30.0" fill="DODGERBLUE" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <Path fx:id="path" fill="#ba141400" stroke="#34ff34" strokeLineCap="ROUND" strokeWidth="60.0" />
+      <ImageView fx:id="pathEndImage" fitHeight="102.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/pathEnd.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
